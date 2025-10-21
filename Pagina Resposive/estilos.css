@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Plus Jakarta Bold";
+  src: url("./recursos/PlusJakartaSans-Bold.ttf");
+}
+@font-face {
+  font-family: "Plus Jakarta Medium";
+  src: url("./recursos/PlusJakartaSans-Medium.ttf");
+}
+
+:root {
+  --padding-x: 6.7%;
+  --color-bg: #181921;
+  --color-light: #ffffff;
+  --color-dark: #181921;
+  --color-muted: rgba(255, 255, 255, 0.6);
+  --color-accent: #EBEBEB;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Medium", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: var(--color-bg);
+}
+
+/* Tipografía */
+h1 {
+  font-family: "Plus Jakarta Bold";
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: "Plus Jakarta Bold";
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: "Plus Jakarta Bold";
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Utilidades */
+.text-center {
+  text-align: center;
+}
+.text-light {
+  color: var(--color-light);
+}
+.text-muted {
+  color: var(--color-muted);
+}
+.subrayado {
+  text-decoration: underline;
+}
+
+/* Secciones */
+.section {
+  padding: 90px var(--padding-x);
+}
+
+.bg-light {
+  background: var(--color-accent);
+}
+.bg-dark {
+  background: var(--color-dark);
+}
+.bg-hero {
+  background: url('./recursos/FondoEncabezado_Desktop.jpg') center/cover no-repeat;
+}
+.bg-form {
+  background: url('./recursos/FondoFormulario.png') center/cover no-repeat;
+}
+
+/* Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.flex-responsive {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.imagen {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Botón */
+.btn {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #282A36;
+  color: #ffffff;
+  border-color: #282A36;
+}
+
+/* Bullets */
+.grid-bullets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.bullet {
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
+.bullet img {
+  width: 60px;
+  margin-bottom: 12px;
+}
+
+/* Formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+input, select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+select {
+  cursor: pointer;
+}
+
+/* Footer */
+.section-footer {
+  background: var(--color-dark);
+  color: var(--color-muted);
+  padding: 30px var(--padding-x);
+}
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.footer-grid img {
+  width: 42px;
+}
+.logo {
+  width: 60px;
+  height: auto;
+}
